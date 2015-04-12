@@ -1,0 +1,205 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_OPERATOR DIALOG  0, 0, 300, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 16, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "开始测量",IDC_BtnStart,10,143,88,16
+    EDITTEXT        IDC_EDIT_ESpeed,38,69,48,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "电气速度",IDC_STATIC_ESPEED,7,70,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_Order,15,97,13,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "第",IDC_STATIC_ORDER1,7,99,10,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MSpeed,38,82,48,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "机械速度",IDC_STATIC_MSPEED,7,83,31,12,SS_CENTERIMAGE
+    LTEXT           "次测量",IDC_STATIC_ORDER2,28,99,24,8
+    EDITTEXT        IDC_EDIT_RSpeed,38,56,48,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "额定速度",IDC_STATIC_RSPEED,7,57,30,12,SS_CENTERIMAGE
+    CTEXT           "型  号",IDC_STATIC_TYPE,8,27,27,12,SS_CENTERIMAGE
+    CTEXT           "编  号",IDC_STATIC_ID,8,42,27,12,SS_CENTERIMAGE
+    PUSHBUTTON      "上一次",IDC_BtnPrev,8,128,42,14,NOT WS_VISIBLE
+    PUSHBUTTON      "下一次",IDC_BtnNext,52,97,39,14
+    PUSHBUTTON      "打开",IDC_BtnOpen,124,145,30,14
+    PUSHBUTTON      "保存",IDC_BtnSave,166,145,30,14
+    PUSHBUTTON      "打印",IDC_BtnPrint,208,145,30,14
+    LTEXT           "m/s",IDC_STATIC,86,56,14,12,SS_CENTERIMAGE
+    LTEXT           "m/s",IDC_STATIC,86,82,14,12,SS_CENTERIMAGE
+    LTEXT           "m/s",IDC_STATIC,86,70,14,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ID,38,41,48,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_MAP1,110,27,175,112
+    EDITTEXT        IDC_EDIT_Velocity,108,14,67,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "返回",IDC_BtnClose,254,145,30,14
+    COMBOBOX        IDC_COMBOX_TYPE,38,27,48,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_Qualified,52,117,32,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "是否合格",IDC_STATIC,9,118,40,13,SS_CENTERIMAGE
+    LTEXT           "下限",IDC_STATIC,184,14,17,12,SS_CENTERIMAGE
+    LTEXT           "上限",IDC_STATIC,232,15,18,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_RSpeedLimitLow,202,14,27,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_RSpeedLimitUp,252,14,27,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_START DIALOG  0, 0, 279, 163
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 16, "微软雅黑"
+BEGIN
+    PUSHBUTTON      "关闭",IDSTARTCANCEL,222,133,50,23
+    PUSHBUTTON      "管理员",IDC_BtnAdmin,89,21,118,34
+    PUSHBUTTON      "操作员",IDC_BtnOperator,89,74,118,34
+END
+
+IDD_DIALOG_Admin DIALOG  0, 0, 290, 175
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 16, "微软雅黑"
+BEGIN
+    PUSHBUTTON      "返回",IDC_BtnAminCancle,243,142,40,22
+    CONTROL         "",IDC_LIST_Admin,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,18,7,217,161
+    PUSHBUTTON      "添加",IDB_ADD,243,7,40,22
+    PUSHBUTTON      "删除",IDB_DEL,243,52,40,22
+    PUSHBUTTON      "修改",IDB_MODIFY,243,97,40,22
+END
+
+IDD_DIALOG_Admin_Add DIALOG  0, 0, 289, 184
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 16, "微软雅黑"
+BEGIN
+    PUSHBUTTON      "取消",IDD_Admin_Add_CANCEL,243,148,39,17
+    DEFPUSHBUTTON   "确定",IDD_Admin_Add_OK,121,149,39,18
+    CTEXT           "型号",IDC_STATIC,7,12,36,9,SS_CENTERIMAGE
+    CTEXT           "已经完成的测试",IDC_STATIC,147,12,87,9,SS_CENTERIMAGE
+    CTEXT           "备注",IDC_STATIC,34,93,36,8,SS_CENTERIMAGE
+    CTEXT           "直径",IDC_STATIC,55,39,36,8,SS_CENTERIMAGE
+    CTEXT           "下限",IDC_STATIC,7,65,36,8,SS_CENTERIMAGE
+    CTEXT           "编码",IDC_STATIC,54,12,36,9,SS_CENTERIMAGE
+    CTEXT           "速度",IDC_STATIC,7,39,36,8,SS_CENTERIMAGE
+    CTEXT           "上限",IDC_STATIC,55,65,36,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_Admin_Type,7,22,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Admin_Code,53,22,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Admin_Speed,7,49,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Admin_Dia,53,49,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Admin_SpeedLimit2,7,75,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Admin_SpeedLimit,53,75,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Admin_Info,7,103,93,43,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_Admin_tests,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,105,22,177,124
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_OPERATOR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 291
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_START, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_DIALOG_Admin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIALOG_Admin_Add, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+BELLEVUE                ICON                    "bel.ico"
+IDI_ICON3               ICON                    "listview.ico"
+REDMOND                 ICON                    "red.ico"
+IDI_ICON2               ICON                    "red2.ico"
+SEATTLE                 ICON                    "sea.ico"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
